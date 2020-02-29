@@ -60,7 +60,7 @@ jobs:
       - name: Make download
         run: |
           make download -j8
-          make package/lean/luci-app-ssr-plus/compile V=99
+          #make package/lean/luci-app-ssr-plus/compile V=99
           find dl -size -1024c -exec rm -f {} \;
 
       - name: Compile firmware

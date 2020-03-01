@@ -78,11 +78,11 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@master
         with:
-          name: OpenWrt firmware
+          name: OpenWrt-firmware
           path: ./bin/targets/
 
       - name: Upload packages
         uses: actions/upload-artifact@master
         with:
-          name: OpenWrt packages
+          name: OpenWrt-packages
           path: ./bin/packages/

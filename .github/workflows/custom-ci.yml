@@ -80,3 +80,9 @@ jobs:
         with:
           name: OpenWrt firmware
           path: ./bin/targets/
+
+      - name: Upload packages
+        uses: actions/upload-artifact@master
+        with:
+          name: OpenWrt packages
+          path: ./bin/packages/
